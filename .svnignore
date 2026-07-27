@@ -1,0 +1,45 @@
+# SVN 忽略配置
+# 使用方式: 在项目根目录下运行以下命令逐条设置
+# svn propset svn:ignore -F .svnignore .
+
+# 依赖
+node_modules
+
+# 构建输出
+dist
+dist-ssr
+
+# 日志
+*.log
+logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# 系统文件
+.DS_Store
+*.sw?
+
+# 编辑器
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# 缓存/临时
+*.tsbuildinfo
+.eslintcache
+*.local
+
+# Cypress 测试产物
+/cypress/videos/
+/cypress/screenshots/
+
+# Vitest 截图
+__screenshots__/
+
+# Vite 临时文件
+*.timestamp-*-*.mjs
